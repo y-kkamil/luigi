@@ -21,7 +21,6 @@ module.exports = {
     rules: [
       {
         test: /\.(html|js)$/,
-        exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
           query: babelSettings

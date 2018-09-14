@@ -5,7 +5,7 @@
   "license": "Apache-2.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --disableHostCheck",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
@@ -29,7 +29,7 @@
     "ajv": "^6.1.1",
     "core-js": "^2.4.1",
     "fundamental-ui": "^1.1.0",
-    "@kyma-project/luigi-core": "0.3.2",
+    "@kyma-project/luigi-core": "git@github.com:y-kkamil/luigi.git#es5",
     "@kyma-project/luigi-client": "0.3.2",
     "zone.js": "^0.8.14",
     "rxjs": "^6.2.0"
