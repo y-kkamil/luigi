@@ -266,7 +266,12 @@
                 }
               );
             } else {
-              console.error('goBack() not possible, no preserved views found.');
+              if (document.referrer.includes(window.location.host)) {
+                window.history.back();
+              }
+              else {
+                console.error('goBack() not possible, no preserved views found.');
+              }
             }
           }
 

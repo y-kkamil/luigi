@@ -393,15 +393,13 @@
          * LuigiClient.linkManager().goBack(true);
          */
         goBack: function goBack(goBackValue) {
-          if (this.hasBack()) {
-            window.parent.postMessage(
-              {
-                msg: 'luigi.navigation.back',
-                goBackContext: goBackValue && JSON.stringify(goBackValue)
-              },
-              '*'
-            );
-          }
+          window.parent.postMessage(
+            {
+              msg: 'luigi.navigation.back',
+              goBackContext: goBackValue && JSON.stringify(goBackValue)
+            },
+            '*'
+          );
         }
       };
     },
